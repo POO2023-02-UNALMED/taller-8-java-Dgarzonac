@@ -13,11 +13,11 @@ public abstract class Futbolista {
 	}
 	
 	public Futbolista() {
-		this("Maradina", 30, "delantero");
+		this("Maradona", 30, "delantero");
 	}
 	
 	public String toString() {
-		return "El futbolista" + this.nombre + "tiene" + this.edad + ",y jueda de" + this.posicion;
+		return "El futbolista " + this.nombre + " tiene " + this.edad + ", y jueda de " + this.posicion;
 	}
 	
 	public boolean equals(Futbolista f, Futbolista f1){

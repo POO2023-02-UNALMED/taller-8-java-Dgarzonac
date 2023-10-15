@@ -13,8 +13,8 @@ public class Jugador extends Futbolista {
 	
 	public Jugador(){
 		super();
-		this.golesMarcados = 289;
-		this.dorsal = 7;
+        this.golesMarcados = 289;
+        this.dorsal = 7;
 	}
 	public int compareTo(Jugador jugador) {
 		return Math.abs(this.getEdad() - jugador.getEdad());
@@ -36,6 +36,12 @@ public class Jugador extends Futbolista {
 		this.dorsal= dorsal;
 	}
 	public String toString(){
-		return "El futbolista" + this.getNombre() +"tiene" + this.getEdad() + "y juega de" + this.getPosicion() + "conj el dorsal"+ this.getDorsal() + "Ha marcado" + this.getGolesMarcados();
+		return "El futbolista " + this.getNombre() + " tiene " + this.getEdad() + ", y juega de " + this.getPosicion() + " con el dorsal "+ this.getDorsal() + ". Ha marcado " + this.getGolesMarcados();
 	}
+
+
+public static void main(String[] args){
+	Jugador jugador = new Jugador();
+	System.out.println(jugador.toString());
+}
 }
