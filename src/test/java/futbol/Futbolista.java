@@ -1,6 +1,6 @@
 package futbol;
 
-abstract class Futbolista {
+public abstract class Futbolista {
 	private String nombre; 
 	private int edad;
 	final private String posicion;
@@ -16,6 +16,7 @@ abstract class Futbolista {
 		this("Maradina", 30, "delantero");
 	}
 	
+	@Override
 	public String toString() {
 		return "El futbolista" + this.nombre + "tiene" + this.edad + ",y jueda de" + this.posicion;
 	}
@@ -46,4 +47,5 @@ abstract class Futbolista {
 	public void setEdad(int edad){
 		this.edad = edad;
 	}
+
 }

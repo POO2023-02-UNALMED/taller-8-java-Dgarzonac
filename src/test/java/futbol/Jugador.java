@@ -16,7 +16,7 @@ public class Jugador extends Futbolista implements Comparable<Jugador>{
 		this.golesMarcados = 289;
 		this.dorsal = 7;
 	}
-	
+	@Override
 	public int compareTo(Jugador jugador) {
 		return Math.abs(this.getEdad() - jugador.getEdad());
 	}
@@ -29,14 +29,14 @@ public class Jugador extends Futbolista implements Comparable<Jugador>{
 		return this.dorsal;
 	}
 	
-	public void setGolesMarcados(){
+	public void setGolesMarcados(short golesMarcados){
 		this.golesMarcados = golesMarcados;
 	}
 	
-	public void setDorsal(){
+	public void setDorsal(byte dorsal){
 		this.dorsal= dorsal;
 	}
-	
+	@Override
 	public String toString(){
 		return "El futbolista" + this.getNombre() +"tiene" + this.getEdad() + "y juega de" + this.getPosicion() + "conj el dorsal"+ this.getDorsal() + "Ha marcado" + this.getGolesMarcados();
 	}
