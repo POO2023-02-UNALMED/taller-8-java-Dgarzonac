@@ -13,7 +13,7 @@ public class Portero extends Futbolista {
 		return Math.abs(this.getGolesRecibidos() - portero.getGolesRecibidos());
 	}
 	public String toString(){
-		return "El futbolista " + this.getNombre() +" tiene "+ this.getEdad()+ ", y juega de "+ this.getPosicion()+" con el dorsal "+ this.getDorsal()+ ". Le han marcado"+ this.getGolesRecibidos();
+		return "El futbolista " + this.getNombre() +" tiene "+ this.getEdad()+ ", y juega de "+ this.getPosicion()+" con el dorsal "+ this.getDorsal()+ ". Le han marcado "+ this.getGolesRecibidos();
 	}
 	public short getGolesRecibidos(){
 		return this.golesRecibidos;
@@ -29,5 +29,10 @@ public class Portero extends Futbolista {
 	
 	public void setDorsal(byte dorsal){
 		this.dorsal = dorsal;
+	}
+	
+	public static void main(String[] args){
+		Portero p = new Portero("Santiago", 23, (short) 6, (byte) 8);
+		System.out.println(p.toString());
 	}
 }

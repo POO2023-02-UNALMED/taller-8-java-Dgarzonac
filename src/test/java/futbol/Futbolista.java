@@ -1,6 +1,6 @@
 package futbol;
 
-public abstract class Futbolista {
+public  class Futbolista {
 	private String nombre; 
 	private int edad;
 	final private String posicion;
@@ -17,7 +17,7 @@ public abstract class Futbolista {
 	}
 	
 	public String toString() {
-		return "El futbolista " + this.nombre + " tiene " + this.edad + ", y jueda de " + this.posicion;
+		return "El futbolista " + this.nombre + " tiene " + this.edad + ", y juega de " + this.posicion;
 	}
 	
 	public boolean equals(Futbolista f, Futbolista f1){
